@@ -17,7 +17,7 @@ it('youtest', function() {
   cy.log('clicked on fast x2');
   cy.get('.ytp-settings-button').click();
   cy.log('clicked on settings toggle out');
-  // cy.pause(15 * 60 * 1000);
-  // cy.wait(15 * 60 * 1000);
+  cy.pause(15 * 60 * 1000);
+  cy.wait(15 * 60 * 1000);
   /* ==== End Cypress Studio ==== */
 });
