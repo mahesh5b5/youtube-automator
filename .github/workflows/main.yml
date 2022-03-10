@@ -3,7 +3,7 @@ on:
   push:
       branches: [ main ]
   schedule:
-      - cron:  '*/15 * * * *'
+      - cron:  '*/10 * * * *'
 jobs:
  cypress-run:
     runs-on: ubuntu-latest
@@ -16,8 +16,6 @@ jobs:
             node:version: '14'
       - name: Install dependencies
         run: npm install     
-      - name: Install xmllint
-        run: sudo apt-get libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
       - name: Cypress run
         timeout-minutes: 12
         uses: cypress-io/github-action@v2
