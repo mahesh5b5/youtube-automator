@@ -18,8 +18,12 @@ it('youtest', function () {
   cy.task('log', 'clicked on fast x2');
   cy.get('.ytp-settings-button').click();
   cy.task('log', 'clicked on settings toggle out');
-  cy.wait(15 * 60 * 1000);
+  cy.wait(2 * 60 * 1000);
   cy.task('log', 'exiting youtube!')
   cy.wait(1000)
   /* ==== End Cypress Studio ==== */
 });
+
+it('end test', function(){
+  cy.task('log','test ends');
+})
