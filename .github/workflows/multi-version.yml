@@ -3,7 +3,7 @@ on:
 #   push:
 #       branches: [ main ]
   schedule:
-     - cron:  '30 13,8,21 * * *'
+     - cron:  '30 8,12,14,19,21 * * *'
 jobs:
  cypress-run-multi-nodes-windows:
     runs-on: windows-latest
