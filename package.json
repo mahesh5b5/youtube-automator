@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cypress open",
     "test:head": "cypress run --headed -b electron --record --key 29f7956c-8f73-4560-b9a6-5101254d6958",
-    "test": "cypress run -b electron --record --key 29f7956c-8f73-4560-b9a6-5101254d6958"
+    "test": "cypress run --headed -b electron --record --key 29f7956c-8f73-4560-b9a6-5101254d6958"
   },
   "author": "",
   "license": "ISC",
