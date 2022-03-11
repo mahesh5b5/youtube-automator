@@ -13,22 +13,18 @@ it('youtest', function () {
   cy.task('log', 'clicked on mute');
   cy.get('.ytp-settings-button').click({force: true});
   cy.task('log', 'clicked on settings toggle in');
-  cy.screenshot();
   cy.get(':nth-child(2) > .ytp-menuitem-content').click({force: true});
   cy.get(':nth-child(8) > .ytp-menuitem-label').click({force: true});
   cy.task('log', 'clicked on fast x2');
+  cy.screenshot();
   cy.get('.ytp-settings-button').click({force: true});
   cy.task('log', 'clicked on settings toggle out');
-  cy.screenshot();
   cy.wait(10 * 60 * 1000)
   cy.task('log', 'exiting youtube!')
-  cy.screenshot();
   cy.wait(1000)
-  cy.screenshot();
   /* ==== End Cypress Studio ==== */
 });
 
 it('end test', function () {
-  cy.screenshot();
   cy.task('log','test ends');
 })
