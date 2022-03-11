@@ -16,7 +16,6 @@ it('youtest', function () {
   cy.get(':nth-child(2) > .ytp-menuitem-content').click({force: true});
   cy.get(':nth-child(8) > .ytp-menuitem-label').click({force: true});
   cy.task('log', 'clicked on fast x2');
-  cy.screenshot();
   cy.get('.ytp-settings-button').click({force: true});
   cy.task('log', 'clicked on settings toggle out');
   cy.wait(10 * 60 * 1000)
