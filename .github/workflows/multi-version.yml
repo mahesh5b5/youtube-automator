@@ -1,7 +1,7 @@
-name: Cypress run test
+name: Cypress run test windows multi nodejs
 on: 
-  push:
-      branches: [ main ]
+#   push:
+#       branches: [ main ]
   schedule:
      - cron:  '30 13 * * *'
 jobs:
