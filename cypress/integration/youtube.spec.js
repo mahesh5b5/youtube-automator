@@ -22,13 +22,10 @@ it('youtest', function () {
   cy.screenshot();
   cy.wait(10 * 60 * 1000)
   cy.task('log', 'exiting youtube!')
-  cy.screenshot();
   cy.wait(1000)
-  cy.screenshot();
   /* ==== End Cypress Studio ==== */
 });
 
 it('end test', function () {
-  cy.screenshot();
   cy.task('log','test ends');
 })
