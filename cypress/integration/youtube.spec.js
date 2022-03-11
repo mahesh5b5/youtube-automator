@@ -4,20 +4,20 @@ it('youtest', function () {
   /* ==== Generated with Cypress Studio ==== */
   cy.visit('https://www.youtube.com/channel/UCYENu_O0VXQ_a2YH88CKyAg');
   cy.task('log', 'loaded page');
-  cy.get(':nth-child(6) > .tab-content').click()
+  cy.get(':nth-child(6) > .tab-content').click({force: true})
   cy.task('log', 'clicked on playlist tab');
-  cy.get(':nth-child(2) > h3.style-scope > #video-title').click();
+  cy.get(':nth-child(2) > h3.style-scope > #video-title').click({force: true});
   // cy.get(':nth-child(2) > .yt-simple-endpoint > .style-grey-text > #button > .ytd-toggle-button-renderer').click();
   cy.task('log', 'clicked on playlist item');
-  cy.get('.ytp-mute-button').click();
+  cy.get('.ytp-mute-button').click({force: true});
   cy.task('log', 'clicked on mute');
-  cy.get('.ytp-settings-button').click();
+  cy.get('.ytp-settings-button').click({force: true});
   cy.task('log', 'clicked on settings toggle in');
   cy.screenshot();
-  cy.get(':nth-child(2) > .ytp-menuitem-content').click();
-  cy.get(':nth-child(8) > .ytp-menuitem-label').click();
+  cy.get(':nth-child(2) > .ytp-menuitem-content').click({force: true});
+  cy.get(':nth-child(8) > .ytp-menuitem-label').click({force: true});
   cy.task('log', 'clicked on fast x2');
-  cy.get('.ytp-settings-button').click();
+  cy.get('.ytp-settings-button').click({force: true});
   cy.task('log', 'clicked on settings toggle out');
   cy.screenshot();
   cy.wait(10 * 60 * 1000)
