@@ -13,13 +13,11 @@ it('youtest', function () {
   cy.task('log', 'clicked on mute');
   cy.get('.ytp-settings-button').click();
   cy.task('log', 'clicked on settings toggle in');
-  cy.screenshot();
   cy.get(':nth-child(2) > .ytp-menuitem-content').click();
   cy.get(':nth-child(8) > .ytp-menuitem-label').click();
   cy.task('log', 'clicked on fast x2');
   cy.get('.ytp-settings-button').click();
   cy.task('log', 'clicked on settings toggle out');
-  cy.screenshot();
   cy.wait(10 * 60 * 1000)
   cy.task('log', 'exiting youtube!')
   cy.wait(1000)
