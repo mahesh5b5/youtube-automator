@@ -9,8 +9,8 @@ it('youtest', function () {
   cy.get(':nth-child(2) > h3.style-scope > #video-title').click();
   // cy.get(':nth-child(2) > .yt-simple-endpoint > .style-grey-text > #button > .ytd-toggle-button-renderer').click();
   cy.task('log', 'clicked on playlist item');
-  cy.get('.ytp-mute-button').click();
-  cy.task('log', 'clicked on mute');
+ // cy.get('.ytp-mute-button').click();
+ // cy.task('log', 'clicked on mute');
 //   cy.get('.ytp-settings-button').click();
 //   cy.task('log', 'clicked on settings toggle in');
 //   cy.get(':nth-child(2) > .ytp-menuitem-content').click();
