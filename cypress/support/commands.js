@@ -10,7 +10,20 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
+Cypress.Commands.add("view", (video) => {
+  function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+
+  const rndInt = randomIntFromInterval(30, 200);
+  cy.task('log', 'loading new video');
+  cy.visit(video.url);
+  cy.wait(5000)
+  cy.task('log', `video loaded => ${video.name} dutation: ${rndInt}`);
+  cy.wait(rndInt * 1000)
+  cy.task('log', 'exiting video!')
+  cy.wait(1000)
+ })
 //
 //
 // -- This is a child command --
