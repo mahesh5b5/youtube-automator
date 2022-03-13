@@ -4,40 +4,44 @@ it('youtest', function () {
   cy.task('log', 'Running youtube test!');
   [
     {
-      name: 'philips juicer',
-      url: 'https://www.youtube.com/watch?v=zNBOIqbwZkg'
-    },
-    {
       name: 'Egg Fried Rice ',
       url: 'https://www.youtube.com/watch?v=CemNc6f6q8g'
+    },
+    {
+      name: 'cauliflower 65',
+      url: 'https://www.youtube.com/watch?v=sgyfLqTvre0'
+    },    
+    {
+      name: 'Pondicherry 2022',
+      url: 'https://www.youtube.com/watch?v=473SW-oDddk'
+    },
+    {
+      name: 'Mirchi stuffed',
+      url: 'https://www.youtube.com/watch?v=XC2ggQ3-8RA'
+    },
+    {
+      name: 'beerakaya tokku pachadi',
+      url:'https://www.youtube.com/watch?v=uZTZ4jTl56g'
     },
     {
       name: 'Ragi Dosa with coconut chutney',
       url: 'https://www.youtube.com/watch?v=Zw1ayPh1nRA'
     },
     {
-      name: 'Pondicherry 2022',
-      url: 'https://www.youtube.com/watch?v=473SW-oDddk'
+      name: 'philips juicer',
+      url: 'https://www.youtube.com/watch?v=zNBOIqbwZkg'
     },
     {
-      name: 'Easy Quick Pineapple Grill',
-      url: 'https://www.youtube.com/watch?v=YZQ-6DdZ_e8'
+      name: 'Momos',
+      url:'https://www.youtube.com/watch?v=JkphmnVBY4w'
     },
     {
-      name: 'Dosa pindi punugulu ',
-      url: 'https://www.youtube.com/watch?v=waIZbwkMGqk'
+      name: 'Easy pani puri',
+      url:'https://www.youtube.com/watch?v=OyCQ53r9h1o'
     },
     {
-      name: 'Peanut banana smoothie',
-      url: 'https://www.youtube.com/watch?v=u86-tv5mvC0'
-    },
-    {
-      name: 'Oats Strawberry cake',
-      url: 'https://www.youtube.com/watch?v=1g2gpXmcPBg'
-    },
-    {
-      name: 'Watermelon mocktail',
-      url: 'https://www.youtube.com/watch?v=qgunsWGo6L0'
+      name: 'Ragi laddu',
+      url: 'https://www.youtube.com/watch?v=vRjHUYbT-hI'
     },
     {
       name: 'Bottle Gourd Akki Roti',
@@ -48,16 +52,36 @@ it('youtest', function () {
       url: 'https://www.youtube.com/watch?v=vRjHUYbT-hI'
     },
     {
-      name: 'Saggubiyyam upma',
-      url: 'https://www.youtube.com/watch?v=qKl1DNvxtb4'
-    },
-    {
       name: 'Homemade Samosa',
       url: 'https://www.youtube.com/watch?v=Zk07h2JaSyg'
     },
     {
+      name: 'Saggubiyyam upma',
+      url: 'https://www.youtube.com/watch?v=qKl1DNvxtb4'
+    },
+    {
       name: 'Jucker farm',
       url: 'https://www.youtube.com/watch?v=s9LVzhV49s8'
+    },
+    {
+      name: 'Watermelon mocktail',
+      url: 'https://www.youtube.com/watch?v=qgunsWGo6L0'
+    },
+    {
+      name: 'Oats Strawberry cake',
+      url: 'https://www.youtube.com/watch?v=1g2gpXmcPBg'
+    },
+    {
+      name: 'Peanut banana smoothie',
+      url: 'https://www.youtube.com/watch?v=u86-tv5mvC0'
+    },
+    {
+      name: 'Dosa pindi punugulu ',
+      url: 'https://www.youtube.com/watch?v=waIZbwkMGqk'
+    },
+    {
+      name: 'Easy Quick Pineapple Grill',
+      url: 'https://www.youtube.com/watch?v=YZQ-6DdZ_e8'
     }
   ].forEach(video => cy.view(video));
 

@@ -14,12 +14,12 @@ Cypress.Commands.add("view", (video) => {
   function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
-
+  const { name='', url='' } = video;
   const rndInt = randomIntFromInterval(30, 200);
   cy.task('log', 'loading new video');
-  cy.visit(video.url);
+  cy.visit(url);
   cy.wait(5000)
-  cy.task('log', `video loaded => ${video.name} dutation: ${rndInt}`);
+  cy.task('log', `video loaded => ${name} dutation: ${rndInt}`);
   cy.wait(rndInt * 1000)
   cy.task('log', 'exiting video!')
   cy.wait(1000)
