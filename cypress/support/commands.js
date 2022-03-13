@@ -18,7 +18,7 @@ Cypress.Commands.add("view", (video) => {
   const rndInt = randomIntFromInterval(30, 200);
   cy.task('log', 'loading new video');
   cy.visit(url);
-  cy.wait(5000)
+  cy.wait(3500)
   cy.task('log', `video loaded => ${name} dutation: ${rndInt}`);
   cy.wait(rndInt * 1000)
   cy.task('log', 'exiting video!')
