@@ -24,6 +24,8 @@ Cypress.Commands.add("view", (video) => {
   cy.task('log', 'exiting video!')
   cy.wait(1000)
  })
+
+
 //
 //
 // -- This is a child command --
