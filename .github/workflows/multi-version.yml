@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install     
       - name: Cypress run
-        timeout-minutes: 45
+        timeout-minutes: 59
         uses: cypress-io/github-action@v2
         with:
           start: npm test
