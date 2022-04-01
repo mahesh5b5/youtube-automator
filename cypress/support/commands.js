@@ -15,7 +15,7 @@ Cypress.Commands.add("view", (video) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
   const { name='', url='' } = video;
-  const rndInt = randomIntFromInterval(30, 200);
+  const rndInt = randomIntFromInterval(40, 230);
   cy.task('log', 'loading new video');
   cy.visit(url);
   cy.wait(3500)
