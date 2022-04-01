@@ -8,6 +8,18 @@ it('youtest', function () {
       url: 'https://www.youtube.com/watch?v=CemNc6f6q8g'
     },
     {
+      name: 'Avalakki laddu',
+      url: 'https://www.youtube.com/watch?v=O6oJeFI67nc'
+    },
+    {
+      name:'Zurich ratha yatra',
+      url: 'https://www.youtube.com/watch?v=_XJ_p7_JkGU'
+    },
+    {
+      name: 'My home garden in Switzerland',
+      url: 'https://www.youtube.com/watch?v=6wt_GmkcPNI'
+    },
+    {
       name: 'cauliflower 65',
       url: 'https://www.youtube.com/watch?v=sgyfLqTvre0'
     },    
@@ -62,6 +74,10 @@ it('youtest', function () {
     {
       name: 'Jucker farm',
       url: 'https://www.youtube.com/watch?v=s9LVzhV49s8'
+    },
+    {
+      name: 'Strawberry plucking',
+      url: 'https://www.youtube.com/watch?v=f7esubAqamg'
     },
     {
       name: 'Watermelon mocktail',
