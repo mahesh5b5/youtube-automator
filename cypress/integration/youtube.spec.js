@@ -3,6 +3,10 @@
 it('youtest', function () {
   cy.task('log', 'Running youtube test!');
   [
+{
+name:'egg dosa peanut chutney combo',
+url:'https://youtu.be/NstcUjiZSOI'
+},
     {
       name: 'Egg Fried Rice ',
       url: 'https://www.youtube.com/watch?v=CemNc6f6q8g'
