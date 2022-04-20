@@ -4,6 +4,10 @@ it('youtest', function () {
   cy.task('log', 'Running youtube test!');
   [
 {
+ name: 'minumula podi idly podi',
+url: 'https://youtu.be/x-gI4Lw9mFY'
+},
+{
 name:'egg dosa peanut chutney combo',
 url:'https://youtu.be/NstcUjiZSOI'
 },
